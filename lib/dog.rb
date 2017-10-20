@@ -17,5 +17,7 @@ class Dog
     @@all.each do |dog|
       puts dog.name
     end
+    # puts @@all.map { |dog| dog.name}
+    # or puts @@all.map(&:name)
   end
 end
