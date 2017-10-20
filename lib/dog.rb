@@ -1,5 +1,5 @@
 class Dog
-  attr_reader :name
+  attr_accessor :name
 
   @@all = []
 
@@ -9,7 +9,8 @@ class Dog
   end
 
   def self.clear_all
-    @@all = []
+    # @@all = []
+    @@all.clear
   end
 
   def self.all
